@@ -11,28 +11,29 @@ yMap = [0.25, 0.75]
 
 [[keymap]]
 # 默认按键映射方案
-button0 = "q"
-button1 = "w"
-button2 = "e"
-button3 = "r"
-button4 = "a"
-button5 = "s"
-button6 = "d"
-button7 = "f"
-ring0 = "-"
-ring1 = "="
+button0 = "ctrl+shift+z" # krita: redo
+button1 = "ctrl+z" # krita: undo
+button2 = "p" # krita: color picker
+button3 = "[" # krita: decrease brush size
+button4 = "]" # krita: increase brush size
+button5 = "b" # krita: brush
+button6 = "e" # krita: eraser
+button7 = "x" # krita: switch color
+ring0 = "-" # krita: zoom out
+ring1 = "=" # krita: zoom in
 ringButton = "switchSchema"
 
 [[keymap]]
 # 候选按键映射方案
-button0 = "shift+q"
-button1 = "shift+w"
-button2 = "shift+e"
-button3 = "shift+r"
-button4 = "shift+a"
-button5 = "shift+s"
-button6 = "shift+d"
-button7 = "shift+f"
-ring0 = "shift+-"
-ring1 = "shift+="
-# ringBbutton = "fallback" 如果未配置，默认使用前一个方案的按键映射
+ring0 = "ctrl+[" # krita: rotate counter-clockwise
+ring1 = "ctrl+]" # krita: rotate clockwise
+# 未配置的键默认将使用前一个方案的按键映射
+# button0 = "fallback"
+# button1 = "fallback"
+# button2 = "fallback"
+# button3 = "fallback"
+# button4 = "fallback"
+# button5 = "fallback"
+# button6 = "fallback"
+# button7 = "fallback"
+# ringBbutton = "fallback"
