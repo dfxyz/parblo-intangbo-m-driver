@@ -1,0 +1,38 @@
+# 修正X、Y轴的最大值；若未设置则使用设备的报告描述符中提供的最大值
+# TIPS：可以用evtest观察原始的事件设备的X轴、Y轴最大值（注意两个坐标轴需要调换）
+# 注意：这两个字段不支持热更新
+xMaxValue = 16123
+yMaxValue = 26151
+
+# 将X、Y轴的值映射到指定的比例区间内，从而实现映射到显示器的某个区域的效果；若未设置，则映射到显示器的整个区域
+# 下面的例子将绘图板映射到了显示器的靠左中间区域
+xMap = [0, 0.5]
+yMap = [0.25, 0.75]
+
+[[keymap]]
+# 默认按键映射方案
+button0 = "q"
+button1 = "w"
+button2 = "e"
+button3 = "r"
+button4 = "a"
+button5 = "s"
+button6 = "d"
+button7 = "f"
+ring0 = "-"
+ring1 = "="
+ringButton = "switchSchema"
+
+[[keymap]]
+# 候选按键映射方案
+button0 = "shift+q"
+button1 = "shift+w"
+button2 = "shift+e"
+button3 = "shift+r"
+button4 = "shift+a"
+button5 = "shift+s"
+button6 = "shift+d"
+button7 = "shift+f"
+ring0 = "shift+-"
+ring1 = "shift+="
+# ringBbutton = "fallback" 如果未配置，默认使用前一个方案的按键映射
